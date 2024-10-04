@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>www.InsideDecor.com</title>
+
+  <!-- bootstrap css style sheet -->
+  <link href="/InsideDecor/bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- custom css style sheet -->
+  <link rel="stylesheet" href="/InsideDecor/Home/style.css">
+
+  <!-- fontaowsome cnd link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg sticky-top style=" background-color: #e3f2fd;>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/InsideDecor/Images/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        <span id="logoname"> InsideDecor</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/InsideDecor/Home/Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/InsideDecor/Home/project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/InsideDecor/Home/AboutUs.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/InsideDecor/Home/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          data-bs-whatever="@mdo">SIGN UP</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">SIGNUP FORM</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div id="first">
+                    <label class="lab">First Name</label>
+                    <br>
+                    <input class="f1" type="text" class="log" placeholder="Enter text here">
+                  </div>
+                  <div id="second">
+                    <label class="lab">Last Name</label>
+                    <br>
+                    <input class="f1" type="text" class="log" placeholder="Enter text here">
+                  </div>
+                  <div id="third">
+                    <label class="lab">Birthday</label>
+                    <br>
+                    <input class="f1" type="date" class="log">
+                  </div>
+                  <div id="four">
+                    <label for="">Gender</label>
+                    <input class="px" type="radio" class="log">Male
+                    <input class="px" type="radio" class="log">Female
+                  </div>
+                  <div id="five">
+                    <label class="lab">Email</label>
+                    <br>
+                    <input class="f1" type="email" class="log" placeholder="Enter text here">
+                  </div>
+                  <div id="six">
+                    <label class="lab">Phone Number</label>
+                    <br>
+                    <input class="f1" type="number" class="log" placeholder="Enter Number here">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-success" id="btn-bc">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--carousel Img  Slider data-bs-interval="1000" -->
+  <div id="carouselExampleCaptions" class="carousel slide  carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active " data-bs-interval="1500" >
+        <img src="/InsideDecor/Images/interior 1st imgjpg.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" id="slide1">
+          <h5 id="heading">Welcome To InsideDecor</h5>
+          <p id="font4">Interial Design And Decorations</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/InsideDecor/Images/interior4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Second slide label</h5> -->
+          <p id="font5">"A design isn't finished until someone is using it."</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000" >
+        <img src="/InsideDecor/Images/lights-g55a3519cc_1920.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Third slide label</h5> -->
+          <p id="font6">“ A room is not a room without natural light .”</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <hr> <!-- Container 1  Info-->
+  <div class="body1">
+    <div class="container1">
+      <div class="box" style="--clr:#89ec5b;">
+        <div class="content">
+          <div class="icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <div class="text">
+            <h3>Project Design</h3>
+            <p>Quality design must have a sense of authenticity</p>
+            <a href="#">Read More</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="box" style="--clr:#eb5ae5;">
+        <div class="content">
+          <div class="icon"><i class="fa-solid fa-brush"></i></div>
+          <div class="text">
+            <h3>Decorations</h3>
+            <p>“Interior decoration partly thrives on being social.”</p>
+            <a href="#">Read More</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="box" style="--clr:#5b98eb;">
+        <div class="content">
+          <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <div class="text">
+            <h3>Make Over</h3>
+            <p>"The details are not the details. They make the design."</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <!--Container 2  About Company  -->
+  <div class="container2">
+    <div class="card mb-3" style="max-width: 80%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/InsideDecor/Images/office2.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 id="title1">About Company</h2>
+            <h5 id="title" class="card-title">A SMALL EFFICIENT
+              INTERIOR DESIGNING TEAM</h5>
+            <p id="text" class="card-text">
+              “ The essence of interior design will always be about people and how they live. It is about the realities of what makes for
+              an attractive, civilized, meaningful environment, not about fashion or what’s in or what’s out. This is not an easy job.” <br> 
+              <br>           
+              Our houses are a reflection of our personalities. They are safe and beautiful places to retreat and
+              reflect. <br> And we want them
+              to look a certain way and feel a certain vibe; this is where Interior Design comes in. <br> Interior design is
+              a combination of art, decorating, and architecture.
+              <br>
+              
+
+            </p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <!--Container 3 Working Areas-->
+  <div class="container3">
+    <div class="work" align="center">
+      <h3 id="work1">Working Areas</h3>
+    </div>
+    <div class="title2" align="center">
+      <h2 id="work2">Covered Industry</h2>
+      <p>We are an Interior Designer, Who believe in excellence, quality and honesty, <br> yes we design beautiful home interiors..</p>
+    </div>
+    <div class="box1">
+      <div class="tank1">
+        <div class="tank1-1">
+          <img class="imgs" src="/InsideDecor/Images/livingroom +tvset.jpg" alt="" height="355px" width="355px">
+        </div>
+        <div class="tank1-2">
+          <p>
+            <button class="btn btn-info bt1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Residential
+            </button>
+          </p>
+          <div style="min-height: 90px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 330px;">
+                “ For a house to be successful, the objects in it must communicate with one another, respond and balance one another.” 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tank1">
+        <div class="tank1-1">
+          <img class="imgs" src="/InsideDecor/Images/office interior .jpg" alt="" height="355px" width="355px">
+        </div>
+        <div class="tank1-2">
+          <p>
+            <button class="btn btn-info bt1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              office
+            </button>
+          </p>
+          <div style="min-height: 90px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 330px;">
+                “[The design] is supposed to give a good image of the company when you arrive and be both ‘simple and warm' ”
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tank1">
+        <div class="tank1-1">
+          <img class="imgs" src="/InsideDecor/Images/entrance-3127411_1920.jpg" alt="" height="355px" width="355px">
+        </div>
+        <div class="tank1-2">
+          <p>
+            <button class="btn btn-info bt1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Industry
+            </button>
+          </p>
+          <div style="min-height: 90px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 330px;">
+               " Architecture and design are the ultimate expressions of our humanity. They represent how we see the world and how we navigate the world."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!--Container 4 Reviews , Comments-->
+  <section id="test">
+    <div class="test-head">
+   
+      <h1>Client Reviews</h1>
+    </div>
+    <div class="test-container">
+      <div class="test-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="p-img">
+              <img src="/InsideDecor/Images/business-1.jpg" alt="">
+            </div>
+            <div class="username">
+              <strong>punnit kumar</strong>
+              <span>@heypunnit</span>
+            </div>
+          </div>
+
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+
+        <div class="client-c">
+          <p>Fantastic place! The staff is very professional who understood our needs very well. The designs were within our budget and very modern! Finally, an experience centre which understands modern designs.</p>
+        </div>
+      </div>
+      <div class="test-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="p-img">
+              <img src="/InsideDecor/Images/business man2.jpg" alt="">
+            </div>
+            <div class="username">
+              <strong>Shubham Gupta</strong>
+              <span>@Shubham23gupta</span>
+            </div>
+          </div>
+
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+     
+        <div class="client-c">
+          <p>InsideDecor experience centre had a collection of creative designs and our search for a home interior firm ended here. We were happy with flawless execution and timely customer interaction.</p>
+        </div>
+      </div>
+      <div class="test-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="p-img">
+              <img src="/InsideDecor/Images/business-woman-2.jpg" alt="">
+            </div>
+            <div class="username">
+              <strong>Gauri Khan</strong>
+              <span>@itsgauri34</span>
+            </div>
+          </div>
+
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+    
+        <div class="client-c">
+          <p>InsideDecor has made our flat into a home, a home which we always wanted. They understood us and gave us our dream home. The journey with them has been an amazing and smooth one for sure.</p>
+        </div>
+      </div>
+      <div class="test-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="p-img">
+              <img src="/InsideDecor/Images/business man3.jpg" alt="">
+            </div>
+            <div class="username">
+              <strong>Ajay shah</strong>
+              <span>@sha899ajay</span>
+            </div>
+          </div>
+
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </div>
+        
+        <div class="client-c">
+          <p>It was really good to get my home interior done by InsideDecor and was really great to get it completed before 8 days of actual handover date...Good Job Guys...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <br>
+  <!--Container 5 Appointment Form  -->
+  <div class="box4">
+    
+    <div id="box4-1">
+    
+      <div class="tank3">
+    
+        <h2>DO YOU HAVE QUESTIONS ?</h2>
+        <p>Leave your information here and get reply from our expert in 24 hours, don’t hesitate to ask.</p>
+      </div>
+    </div>
+    <div id="box4-2">
+  
+      <h3 id="tag1">Make Appointment </h3>
+      <div class="in-box form-floating mb-3">
+      
+        <input type="text" class="form-control" id="floatingInput" placeholder="Name" size="30">
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="in-box form-floating">
+      
+        <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com" size="30">
+        <label for="floatingPassword">Email</label>
+      </div>
+      <div class="in-box">
+      
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"">
+            <option selected>Interested In</option>
+            <option value=" 1">Residential interior</option>
+          <option value="2">Offices Interior</option>
+          <option value="3">Industry</option>
+        </select>
+      </div>
+      <br>
+      <div class="btn-2" style="margin-top: 30px;">
+        <button type="button" class="btn btn-outline-primary" id="btn-bc">Submit</button>
+      </div>
+    </div>
+  </div>
+  <hr id="hr1"> <!--     Footer      -->
+  <div class="body2">
+    <footer>
+      <div class="container4">
+        <div class="sec about">
+          <h2>InsideDecor</h2>
+          <p>Interior Design And Decorations</p>
+          <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms And Conditions</a></li>
+          </ul>
+        </div>
+        <div class="sec contact1">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+              <span>
+                647 Linda Street <br> phoenixvu=ille, pa 19460, <br>USA
+              </span>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <p><a class="p-no" href="#">+91 8010 4492 70</a><br>
+                <a class="p-no" href="#">+91 8010 4492 70</a>
+              </p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <p><a class="p-no" href="#">dummyemail@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="rights">
+      <p>© 2022–2032 All Rights Reserved by <b> InsideDecor</b>.</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="/InsideDecor/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
